@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box1{
+    border: 2px solid black;
+    display: inline-block;
+    margin:  30px;
+    padding: 40px;
+    width: 200px;
+    height: 100px;
+    outline: 10px solid blue;
+}
+.box2{
+    border: 2px solid blue;
+    display: inline-block;
+    margin: 30px;
+    padding: 40px;
+    width: 200px;
+    height: 100px;
+    box-shadow: inset -1px 3px 16px 3px green
+}
+.box3{
+    border: 2px solid green;
+    display: inline-block;
+    margin: 30px;
+    padding: 40px;
+    width: 200px;
+    height: 100px;
+}
+ul li{
+    margin: 20px;
+    background-color: green;
+    color: white;
+    /* list-style:lower-alpha; */
+    list-style-position: inside;
+    list-style-type: circle;
+    list-style-image: url("https://www.transeptia.com/header%20logo.png");
+}
