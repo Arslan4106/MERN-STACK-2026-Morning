@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.resume{
+    display: flex;
+    margin: 20px 40px;
+}
+.leftResume .name h1{
+    color: #1D7272; 
+    font-size: 60px;
+    font-weight: 800;   
+}
+.leftResume .name{
+    padding: 100px 20px 50px 120px;
+    line-height: 50px;
+}
+.leftResume .name h3{
+font-size: 40px;
+font-weight: 400;
+}
+hr{
+    width: 330px;
+    height: 2px;
+    background-color:#1D7272;  ;
+}
+.leftResume h2{
+    background-color:  #1D7272;
+    color: white;
+    padding: 5px 50px;
+    font-size: 30px;
+    width: 250px;
+    border-radius: 0px 40px 40px 0px;
+    margin: 20px 0px;
+}
+.leftResume h3{
+   color:#1D7272;
+}
