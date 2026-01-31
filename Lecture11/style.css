@@ -1,10 +1,21 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 .resume{
     display: flex;
-    margin: 20px 40px;
+    padding: 20px 40px;
+    /* margin: 20px 40px; */
+    width: 80%;
+    box-sizing: border-box;
+    /* justify-content: center; */
+    /* justify-content: center; */
+    margin: auto;
+    /* border: 2px solid green; */
+}
+.leftResume{
+    width: 50%;
 }
 .leftResume .name h1{
     color: #1D7272; 
@@ -12,7 +23,7 @@
     font-weight: 800;   
 }
 .leftResume .name{
-    padding: 100px 20px 50px 120px;
+    padding: 50px 20px 50px 120px;
     line-height: 50px;
 }
 .leftResume .name h3{
@@ -27,12 +38,140 @@ hr{
 .leftResume h2{
     background-color:  #1D7272;
     color: white;
-    padding: 5px 50px;
+    padding: 5px 20px;
     font-size: 30px;
-    width: 250px;
+    width: 400px;
     border-radius: 0px 40px 40px 0px;
     margin: 20px 0px;
 }
+.leftResume .name{
+    width: 100%;
+}
 .leftResume h3{
    color:#1D7272;
+}
+.leftResume div{
+    width: 400px;   
+}
+.leftResume p{
+    text-align: justify;
+}
+.rightResume{
+    width: 50%;
+    padding: 5  0px 0px 0px 0px;
+}
+.rightResume img{
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+    border: 12px solid #1D7272;
+}
+.rightResume .greenBox{
+    background-color: #1D7272;
+    width: 70%;
+    margin-top: 40px;
+    padding: 40px 20px;
+    color: white;
+    border: 5px solid #E1F2EF;
+    border-radius: 20px;
+    /* margin-top: 20px; */
+}
+.rightResume .greenBox h2{
+    background-color: white;
+    border-radius: 20px;
+    color:#1D7272;
+    text-align: center;
+    font-size: 25px;
+    padding: 5px 0px;
+}
+.rightResume .greenBox .skillslist{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+    line-height: 30px;
+}
+.rightResume .greenBox .languages .langList{
+    display: flex;
+    justify-content: space-around;
+  padding: 20px 20px;
+  line-height: 30px;
+}
+.rightResume .greenBox .contact{
+    line-height: 30px;
+}
+.rightResume .greenBox .contact h2{
+    margin-bottom: 20px;
+}
+.rightResume .greenBox .contact p{
+    margin: 20px 0px
+}
+i{
+    background-color: white;
+    color: green;
+    padding: 5px;
+    /* margin: 20px 20px; */
+    border-radius: 50%;
+}
+span{
+    display: inline-block;
+}
+.boxes .box1{
+    background-color:#01CBCB;
+    width: 50px;
+    padding: 5px 0px;
+    border-radius:  20px 0px 0px 20px;
+}
+.boxes .box2{
+    background-color: white;
+    width: 80px;
+    padding: 5px 0px;
+    border-radius:  0px 20px 20px 0px;
+}
+.boxes .box3{
+    background-color:#01CBCB;
+    width: 50px;
+    padding: 5px 0px;
+    border-radius:  20px 0px 0px 20px;
+}
+.boxes .box4{
+     background-color: white;
+    width: 80px;
+    padding: 5px 0px;
+    border-radius:  0px 20px 20px 0px;
+}
+.boxes .box5{
+    background-color:#01CBCB;
+    width: 50px;
+    padding: 5px 0px;
+    border-radius:  20px 0px 0px 20px;
+}
+.boxes .box6{
+      background-color: white;
+    width: 80px;
+    padding: 5px 0px;
+    border-radius:  0px 20px 20px 0px;
+}
+.boxes .box7{
+    background-color:#01CBCB;
+    width: 50px;
+    padding: 5px 0px;
+    border-radius:  20px 0px 0px 20px; 
+}
+.boxes .box8{
+    background-color: white;
+    width: 80px;
+    padding: 5px 0px;
+    border-radius:  0px 20px 20px 0px;
+}
+.boxes .box9{
+      background-color:#01CBCB;
+    width: 50px;
+    padding: 5px 0px;
+    border-radius:  20px 0px 0px 20px; 
+}
+.boxes .box10{
+    background-color: white;
+    width: 80px;
+    padding: 5px 0px;
+    border-radius:  0px 20px 20px 0px;
 }
