@@ -35,16 +35,47 @@ function avgMarks(studentName, phy, chem, com, mth, isl, urd) {
 avgMarks("Danish", 66, 77, 70, 88, 65, 45); // Parameters
 avgMarks("Azeem", 99, 87, 76, 86, 45, 50);
 // Write a program to find the mark's Percentage of multiple students using functions
-
+function cutFruits(fruit) {
+  return fruit * 4;
+}
 function fruitProcessor(apples, bananas, oranges) {
+  let applePieces = cutFruits(apples); // cutFruits(4)
+  let bananaPieces = cutFruits(bananas);
+  let orangePieces = cutFruits(oranges);
+  //  String Cancatenation
+  let juice =
+    "Juice with" +
+    " " +
+    applePieces +
+    " " +
+    "Pieces of Apples" +
+    " " +
+    bananaPieces +
+    " " +
+    "Pieces of Bananas and" +
+    " " +
+    orangePieces +
+    " " +
+    "Pieces of Oranges";
+  console.log(juice);
   console.log(
     "Juice with",
-    apples,
-    "Apples, ",
-    bananas,
-    "Bananas and,",
-    oranges,
-    "Oranges",
+    applePieces,
+    "Pieces of Apples",
+    bananaPieces,
+    "Pieces of Bananas",
+    "and",
+    orangePieces,
+    "pieces of Oranges",
   );
+
+  //   "Juice with",
+  //   apples,
+  //   "Apples, ",
+  //   bananas,
+  //   "Bananas and,",
+  //   oranges,
+  //   "Oranges",
+  // );
 }
 fruitProcessor(4, 6, 8);
