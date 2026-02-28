@@ -27,6 +27,8 @@ body{
     text-align: justify;
     padding: 10px 20px;
     font-size: 18px;
+    border-radius: 10px;
+    z-index: 1;
 }
 .modal h2{
     text-align: center;
@@ -41,4 +43,16 @@ body{
     background: none;
     color: white;
     cursor: pointer;
+}
+.hidden{
+    display: none;
+}
+.overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background:rgba(0, 0, 0);
+    opacity: 0.6;
 }
