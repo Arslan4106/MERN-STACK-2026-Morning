@@ -35,6 +35,11 @@ const restaurant = {
       `Order Received! The Order of ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be Delivered to ${address} at ${time}`,
     );
   },
+  biryani: function (ing1, ing2, ing3) {
+    console.log(
+      `Here is Your Delicious Biryani with ${ing1}, ${ing2} and ${ing3}`,
+    );
+  },
 };
 // Order Food
 restaurant.orderDelivery({
@@ -113,3 +118,27 @@ const myMenu = [
   ...restaurant.mainMenu,
 ];
 console.log(myMenu);
+// The Spread in Methods as Arguments
+const ingredients = [
+  // prompt("Enter First Ingredients"),
+  // prompt("Enter Second Ingredients"),
+  // prompt("Enter Third Ingredients"),
+];
+console.log(ingredients);
+console.log(...ingredients);
+restaurant.biryani(ingredients[0], ingredients[1], ingredients[2]);
+restaurant.biryani(...ingredients);
+// Iterables: String, Arrays, Maps, Sets, Not Objects
+const str = "Jonas";
+console.log(str);
+console.log(...str);
+const letters = [...str, "B", " ", "S."];
+console.log(letters);
+console.log(...letters);
+// Objects with Spread Operator
+const restaurantCopy = { FoundIn: 1999, ...restaurant, Founder: "Jonas Bob" };
+console.log(restaurantCopy);
+restaurantCopy.name = "Chesious";
+console.log(restaurantCopy.name);
+console.log(restaurant.name);
+console.log(restaurantCopy);
