@@ -40,6 +40,10 @@ const restaurant = {
       `Here is Your Delicious Biryani with ${ing1}, ${ing2} and ${ing3}`,
     );
   },
+  pizaa: function (mainIngredients, ...otherIngredients) {
+    console.log(mainIngredients);
+    console.log(otherIngredients);
+  },
 };
 // Order Food
 restaurant.orderDelivery({
@@ -142,3 +146,45 @@ restaurantCopy.name = "Chesious";
 console.log(restaurantCopy.name);
 console.log(restaurant.name);
 console.log(restaurantCopy);
+// let otherRestaurant = { ...restaurant };
+// let restaurantObject = `${...restaurant}`;
+// console.log(otherRestaurant);
+// console.log(restaurant);
+
+// The Rest Pattern
+const ar = [1, 2, 3, 4, 5, 6, 7, 8];
+const [w, , v, ...others] = ar;
+console.log(w, v, others);
+const [organic, , fast, ...otherFood] = [
+  ...restaurant.categories,
+  ...restaurant.starterMenu,
+  ...restaurant.mainMenu,
+];
+console.log(organic, fast, otherFood);
+
+// Objects
+const { categories: types, name: restName } = restaurant;
+console.log(types, restName);
+const { sat, ...weekdays } = restaurant.openingHours;
+console.log(sat, weekdays);
+
+// Functions
+const add = function (...numbers) {
+  console.log(numbers);
+  console.log(numbers.length);
+  let sum = 0;
+  for (let i = 0; i < numbers.length; i++) {
+    sum = sum + numbers[i];
+  }
+  console.log(sum);
+};
+add(1, 5, 6);
+
+add(7, 8, 9, 0);
+add(2, 3, 4, 5, 6, 7);
+const array = [1, 3, 5, 6, 9, 8];
+add(...array);
+console.log(...array);
+// let mynumber = 67;
+// add(mynumber);
+restaurant.pizaa("Mushrooms", "Onions", "Chicken", "Olives");
